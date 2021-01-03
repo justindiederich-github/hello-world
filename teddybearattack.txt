@@ -1,0 +1,59 @@
+
+
+
+
+
+var x = 200;
+var y = 220;
+
+var facesize = 60;
+var bodysize = 100/60 * facesize;
+var earsize = 1/3 * facesize;
+var eyesize = 1/12 * facesize;
+var nosesize = 1/10 * facesize;
+var mouthsize = 1/6 * facesize;
+
+draw = function() {
+    
+    background(159, 222, 245);
+    
+    // ground
+    fill(63, 133, 85);
+    rect(0, 260, 400, 300); 
+    
+    // body
+    fill(212, 180, 100);
+    ellipse(x-0/60 * facesize, y-0/60 * facesize, bodysize, bodysize); 
+    // left ear
+    ellipse(x-25/60 * facesize, y-95/60 * facesize, earsize, earsize); 
+    // right ear
+    ellipse(x+25/60 * facesize, y-95/60 * facesize, earsize, earsize); 
+    // face
+    ellipse(x, y-70/60 * facesize, facesize, facesize); 
+    
+    // left eye
+    fill(5, 5, 5);
+    ellipse(x-1/6 * facesize, y-80/60 * facesize, eyesize, eyesize); 
+    
+    // right eye
+    ellipse(x+1/6 * facesize, y-80/60 * facesize, eyesize, eyesize); 
+    
+    // nose
+    ellipse(x, y-70/60 * facesize, nosesize, nosesize); 
+    
+    // mouth
+    fill(133, 12, 32);
+    ellipse(x, y-55/60 * facesize, mouthsize, mouthsize);
+    
+
+facesize = facesize +1;
+eyesize = eyesize +0.15;
+earsize = earsize +0.25;
+nosesize = nosesize +0.15;
+mouthsize = mouthsize +0.3;
+bodysize = bodysize +1.3;
+
+            
+    
+    
+};
