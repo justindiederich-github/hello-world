@@ -1,0 +1,47 @@
+fill(255, 0, 0);
+textSize(35);
+text("JUSTIN BARS!!", 10, 40);
+
+textSize(20);
+fill(184, 24, 184);
+text("healthy", 10, 80);
+
+textSize(15);
+fill(68, 48, 219);
+text("delicious", 10, 120);
+
+textSize(12);
+fill(25, 168, 54);
+text("organic", 10, 160);
+
+var barsizeW = 40;
+var barsizeH = 146;
+var x = 180;
+var y = 98;
+
+draw= function() {
+    
+    fill(189, 124, 27);
+    rect(x, y, barsizeH, barsizeW);
+    
+    
+
+fill(221, 142, 237);
+ellipse(197, 110, 10, 10);
+
+fill(235, 240, 88);
+ellipse(210, 127, 10, 10);
+
+fill(89, 230, 106);
+ellipse(232, 116, 10, 10);
+
+fill(235, 80, 80);
+ellipse(256, 110, 10, 10);
+
+fill(240, 136, 9);
+ellipse(275, 127, 10, 10);
+
+fill(240, 132, 240);
+ellipse(298, 116, 10, 10);
+    
+};
